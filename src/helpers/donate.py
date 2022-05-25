@@ -61,10 +61,11 @@ def maybeDonate(txReceipt: TxReceipt) -> Tuple[TxReceipt, TxReceipt]:
     Returns the TUS and CRA transactions as a tuple, or
     (None, None) if donation has not taken place.
     """
-    if not userWantsToDonate():
-        logger.warning(getDonateMessage())
-        sendIM(getDonateMessage())
-        return (None, None)
+    # if not userWantsToDonate():
+    #     logger.warning(getDonateMessage())
+    #     sendIM(getDonateMessage())
+        # return (None, None)
+    return (None, None)
 
     # Make sure the folder with the claim logs exists
     path = getClaimsLogFilepath()
